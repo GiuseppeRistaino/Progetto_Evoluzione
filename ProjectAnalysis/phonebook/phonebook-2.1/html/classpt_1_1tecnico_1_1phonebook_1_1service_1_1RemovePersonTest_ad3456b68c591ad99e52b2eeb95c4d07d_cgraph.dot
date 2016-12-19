@@ -1,0 +1,17 @@
+digraph "pt.tecnico.phonebook.service.RemovePersonTest.initializeDomain"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="pt.tecnico.phonebook.service.\lRemovePersonTest.initializeDomain",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="pt.tecnico.phonebook.domain.\lPhoneBook.addPerson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1PhoneBook.html#af8a25a4b3d8ccc353765cfde1eee6800"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pt.tecnico.phonebook.domain.\lPhoneBook.hasPerson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1PhoneBook.html#a0ec26077676770725334df63e9dd16a7"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pt.tecnico.phonebook.domain.\lPhoneBook.getPersonByName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1PhoneBook.html#ac605e9894944972f6a77a090193c9504"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pt.tecnico.phonebook.domain.\lPhoneBook.getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1PhoneBook.html#a4713673e1ac82a999c8fb36b44c9c393"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pt.tecnico.phonebook.domain.\lPhoneBook.PhoneBook",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1PhoneBook.html#af59e7c6b41881e9b0513fb8aa09d233e"];
+}

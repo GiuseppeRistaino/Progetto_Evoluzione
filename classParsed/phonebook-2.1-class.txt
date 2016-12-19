@@ -1,0 +1,21 @@
+Class number is: 20
+Contact
+Person
+PhoneBook
+AbstractServiceTest
+CreateContactService
+PhoneBookService
+CreateContactTest
+CreationWithDuplicateName
+CreationWithInvalidPhoneNumber
+WithoutContacts
+CreatePersonService
+CreatePersonTest
+Creation
+RemoveContactService
+RemoveContactTest
+RemovePersonService
+WithContacts
+RemovePersonTest
+icBase
+vetica

@@ -1,0 +1,11 @@
+digraph "pt.tecnico.phonebook.domain.Person.addContact"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pt.tecnico.phonebook.domain.\lPerson.addContact",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pt.tecnico.phonebook.domain.\lPerson.hasContact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1Person.html#a61cfddb04aa9694c54937b655a9da380"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pt.tecnico.phonebook.domain.\lPerson.getContactByName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpt_1_1tecnico_1_1phonebook_1_1domain_1_1Person.html#aa855ad0548be26ec1ff835a382919217"];
+}
