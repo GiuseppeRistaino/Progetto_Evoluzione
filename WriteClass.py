@@ -1,16 +1,15 @@
 import os
 import os.path
+import BuildPath
+import Parser
+
+DIR_CLASS="num_Class\\"
 
 def writeNumClass(fileparsed):
     file = open(fileparsed, 'r')
-    #pathdirClass = 'C:\\Users\\Utente\\Desktop\\Evoluzione_Manutenzione_SW\\dotParser\\dirClass\\'
-    pathdirClass = 'classParsed\\'
     filename=projectname+'-class.txt'
-    complete=os.path.join(pathdirClass,filename)
+    complete=os.path.join(BuildPath.create_directory(projectPath,DIR_CLASS),filename)
     fileRes=open(complete,'w')
-    #print(pathdirClass);
-    #dirparsed = os.listdir(pathdirClass)
-    #fileRes = open(projectname+"-class.txt", 'a')
     ClassList = []
     for line in file:
         elem = line.split("|")
@@ -20,13 +19,19 @@ def writeNumClass(fileparsed):
             ClassList.append(ClassName1)
         if ClassName2 not in ClassList:
             ClassList.append(ClassName2)
-    # for e in ClassList:
+
     fileRes.write("Class number is: " + str(len(ClassList)) + "\n")
     for elem in ClassList:
         fileRes.write(elem+"\n")
-dir="dirParsed"
-fileparsed = os.listdir(dir)
-for file in fileparsed:
-    projectname = file.split("-parsed")[0].strip()
-    print(projectname)
-    writeNumClass(dir+"\\"+file)
+
+projectList = os.listdir(BuildPath.ROOT_PATH)
+
+for project in projectList:
+    projectPath = BuildPath.ROOT_PATH + project +"\\"
+    dir=projectPath+Parser.DIR_PARSED
+    fileparsed = os.listdir(dir)
+    for file in fileparsed:
+        projectname = file.split("-parsed")[0].strip()
+        print(projectname)
+
+        writeNumClass(dir+"\\"+file)

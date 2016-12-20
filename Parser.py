@@ -1,17 +1,8 @@
 import os
 import re
+import BuildPath
 
-def printParsedDot(nodeToPackage, assNodes):
-    file = open("parsed.txt", 'a')
-    for pair in assNodes:
-        file.write(nodeToPackage[pair[0]][0])
-        file.write("\t|\t")
-        file.write(nodeToPackage[pair[0]][1])
-        file.write("\t|\t")
-        file.write(nodeToPackage[pair[1]][0])
-        file.write("\t|\t")
-        file.write(nodeToPackage[pair[1]][1])
-        file.write("\n")
+DIR_PARSED="dirParsed\\"
 
 def printParsedDot(nodeToPackage, assNodes, fileName):
     file = open(fileName, 'a')
@@ -50,16 +41,20 @@ def getDotFiles(path):
                 if tmp:
                     assNodes.append(tmp)
                     print(assNodes)
-        printParsedDot(nodeToPackage, assNodes, "dirParsed\\" +release +"-parsed.txt")
 
-path = "ProjectAnalysis\\"
 
-projectList = os.listdir(path)
+
+        printParsedDot(nodeToPackage, assNodes,BuildPath.create_directory(projectPath,DIR_PARSED)+release +"-parsed.txt")
+
+
+projectList = os.listdir(BuildPath.ROOT_PATH)
 
 for project in projectList:
-    projectPath = path + project +"\\"
+    projectPath = BuildPath.ROOT_PATH + project +"\\"
     releaseList = os.listdir(projectPath)
     for release in releaseList:
-        finalPath = projectPath + release+"\\html"
-        print(finalPath)
-        getDotFiles(finalPath)
+        if(release.__contains__(project)):
+            finalPath = projectPath + release+"\\html"
+            print(finalPath)
+            getDotFiles(finalPath)
+
