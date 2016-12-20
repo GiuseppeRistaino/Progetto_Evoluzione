@@ -20,7 +20,7 @@ def writeNumClass(fileparsed):
         if ClassName2 not in ClassList:
             ClassList.append(ClassName2)
 
-    fileRes.write("Class number is: " + str(len(ClassList)) + "\n")
+
     for elem in ClassList:
         fileRes.write(elem+"\n")
 
