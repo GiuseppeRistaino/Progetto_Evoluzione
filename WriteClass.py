@@ -24,6 +24,7 @@ def writeNumClass(fileparsed):
     for elem in ClassList:
         fileRes.write(elem+"\n")
 
+
 projectList = os.listdir(BuildPath.ROOT_PATH)
 
 for project in projectList:
@@ -32,6 +33,6 @@ for project in projectList:
     fileparsed = os.listdir(dir)
     for file in fileparsed:
         projectname = file.split("-parsed")[0].strip()
-        print(projectname)
+
 
         writeNumClass(dir+"\\"+file)
