@@ -42,8 +42,6 @@ def getDotFiles(path):
                     assNodes.append(tmp)
                     print(assNodes)
 
-
-
         printParsedDot(nodeToPackage, assNodes,BuildPath.create_directory(projectPath,DIR_PARSED)+release +"-parsed.txt")
 
 
@@ -51,10 +49,11 @@ projectList = os.listdir(BuildPath.ROOT_PATH)
 
 for project in projectList:
     projectPath = BuildPath.ROOT_PATH + project +"\\"
-    releaseList = os.listdir(projectPath)
+    releasePath = projectPath + "release\\"
+    releaseList = os.listdir(releasePath)
     for release in releaseList:
-        if(release.__contains__(project)):
-            finalPath = projectPath + release+"\\html"
-            print(finalPath)
-            getDotFiles(finalPath)
+        #Forse è meglio mettere le release in una cartella a parte (release)
+        finalPath = releasePath + release+"\\html"
+        print(finalPath)
+        getDotFiles(finalPath)
 
