@@ -1,0 +1,9 @@
+digraph "org.bertolinux.qbittorrentapp.GetTotals.onPostExecute"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="org.bertolinux.qbittorrentapp.\lGetTotals.onPostExecute",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="org.bertolinux.qbittorrentapp.\lMainActivity.setTotals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1MainActivity.html#ac914d909c102d302f2db317edf2db53e"];
+}

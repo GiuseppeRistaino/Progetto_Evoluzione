@@ -1,0 +1,21 @@
+digraph "org.bertolinux.qbittorrentapp.QBitAdapter.getView"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.bertolinux.qbittorrentapp.\lQBitAdapter.getView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.bertolinux.qbittorrentapp.\lTDownload.getDlspeed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#ac13b7f4868aef5872b7b2270d9a35a00"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="org.bertolinux.qbittorrentapp.\lTDownload.getEta",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#a23d72ff7fa761ef527903e641d952b87"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="org.bertolinux.qbittorrentapp.\lTDownload.getHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#ac52f361f3844a33bb647cfad6a646a53"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="org.bertolinux.qbittorrentapp.\lTDownload.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#a498aae13e51994af52320a72ad1abbc8"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="org.bertolinux.qbittorrentapp.\lTDownload.getProgress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#ac4eae22f8dde425ec215841222daa975"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="org.bertolinux.qbittorrentapp.\lTDownload.getSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#af2657d44f465158bbed07b6a38e2de47"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="org.bertolinux.qbittorrentapp.\lTDownload.getState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1TDownload.html#af103774bc4ae86504712ad944ac757ba"];
+}

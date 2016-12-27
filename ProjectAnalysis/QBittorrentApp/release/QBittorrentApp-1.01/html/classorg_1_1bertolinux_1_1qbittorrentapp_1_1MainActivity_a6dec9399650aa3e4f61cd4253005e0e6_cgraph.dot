@@ -1,0 +1,27 @@
+digraph "org.bertolinux.qbittorrentapp.MainActivity.showTorrents"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node36 [label="org.bertolinux.qbittorrentapp.\lMainActivity.showTorrents",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node36 -> Node37 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="org.bertolinux.qbittorrentapp.\lMainActivity.init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1MainActivity.html#ab62eb7ecb4b9a0273e24fd009b8b45b0"];
+  Node37 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="org.bertolinux.qbittorrentapp.\lMainActivity.askConnectionData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1MainActivity.html#a8d6a3c42cc23067e2eefa0a96bef051e"];
+  Node38 -> Node37 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 -> Node39 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.insertConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#a345bf96762d1df0946ee8f41b5016f89"];
+  Node39 -> Node40 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.fetch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#ab7dc221772ac988eb56ce2e158989113"];
+  Node37 -> Node41 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.getHostname",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#a70c31bafd761275988a87f9f195eca66"];
+  Node37 -> Node42 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.getPassword",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#a292ccb0e9037fac9a059543b148df2dd"];
+  Node37 -> Node43 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node43 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.getPort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#ac18d6660b8fd3eec4b6a2995d230db5c"];
+  Node37 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.getUsername",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#a328b530abff001eee6c94d57ca073f1b"];
+  Node37 -> Node36 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="org.bertolinux.qbittorrentapp.\lQBitDatabase.reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1bertolinux_1_1qbittorrentapp_1_1QBitDatabase.html#a65bde5a8c0ecd56901919db94c83ffa0"];
+}
